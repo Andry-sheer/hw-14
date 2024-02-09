@@ -3477,14 +3477,14 @@ textarea:focus {
 } */
 
 /******* Less-14 ******************************************************************/
-.container-cust {
+.container-custom {
   max-width: 1224px;
   margin: 0 auto;
   padding: 40px 12px;
   background: #1c423a;
 }
 
-.container-cust p {
+.container-custom p {
   font-size: 20px;
   font-weight: 700;
   color: #000;
@@ -3495,24 +3495,30 @@ textarea:focus {
 }
 
 /* @media screen and (min-width: 600px) and (max-width: 767.98px) {
-  .container-cust p {
+  .container-custom p {
     font-size: 12px;
     background: #ff7e20;
   }
 } */
 
 /* @media (all) and analog --> (max-width: 767.98px) {
-  .container-cust p {
+  .container-custom p {
     font-size: 12px;
     background: #ff7e20;
   }
 } */
 
-@media (prientation: landspace) {
-  .container-cust{
-    background: #813b3b;
+.body-custom {
+  background: silver;
+  padding: 50px 0;
+}
+
+@media (prefers-color-scheme: dark){
+  /** RULE: max-w = 1280px ~ 4K & 8K pc  **/
+  .body-custom {
+    background: darkslateblue;
   }
-  .container-cust p {
+  .container-custom p {
     font-size: 12px;
     background: #ff7e20;
     color: #253f97;
@@ -3520,7 +3526,7 @@ textarea:focus {
 }
 
 
-.box-cust {
+.box-custom {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -3532,7 +3538,7 @@ textarea:focus {
   или под классом который внитри МЕДИА 
 } */
 
-.item-cust {
+.item-custom {
   height: 150px;
   background:#253f97;
   flex: 1 1 30%;
@@ -3543,23 +3549,23 @@ textarea:focus {
   font-weight: 700;
 }
 
-@media (max-width: 1000px){
-  /**  RULE: max-w = 0 ~ 1000px  **/
-  .box-cust {
-    /**  RULE: max-w = 0 ~ 1000px  **/
+@media (min-width: 640px) and (max-width: 1279.98px){
+  /** RULE: max-w = 640px ~ 800px tablet  **/
+  .box-custom {
     gap: 20px;
     background: #1eff00;
   }
 
-  .item-cust {
+  .item-custom {
     background: #33aa90;
     flex-basis: 45%;
     color: #f2f2f2;
   }
 }
 
-@media (max-width: 600px) {
-  .item-cust {
+@media (max-width: 639.95px) {
+  /** RULE: max-w = 0 ~ 640px mobile **/
+  .item-custom {
     flex-basis: 100%;
     background: #2f313a;
     color: #ff0000;
