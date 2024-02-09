@@ -1516,12 +1516,12 @@ td {
 
 /********** CONTAINER ****************************/
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .container-1 {
-  width: 1224px;
+  max-width: 1224px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -3270,7 +3270,7 @@ td {
 }
 
 
-/****************************** less 13 FORMS ********************************/
+/****************************** less 13 FORMS + INPUT ********************************/
 .BG-less-13 {
   background: #475583;
 }
@@ -3335,8 +3335,6 @@ textarea:focus {
   height: 0;
 }
 
-.checkboxes input {}
-
 .checkboxes input {
   position: absolute;
   z-index: -1;
@@ -3383,7 +3381,7 @@ textarea:focus {
 :disabled
 :not(X) */
 
-/************************* focus **********************************/
+/************************* focus **************************/
 .checkboxes input:focus:checked + label::before {
   border-color: #ff7e20;
   background: #ff7e20;
@@ -3477,4 +3475,115 @@ textarea:focus {
   margin-left: auto;
   opacity: 0.3;
 } */
+
+/******* Less-14 ******************************************************************/
+.container-cust {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 40px 12px;
+  background: #1c423a;
+}
+
+.container-cust p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  padding: 20px;
+  background: #478383;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+
+/* @media screen and (min-width: 600px) and (max-width: 767.98px) {
+  .container-cust p {
+    font-size: 12px;
+    background: #ff7e20;
+  }
+} */
+
+/* @media (all) and analog --> (max-width: 767.98px) {
+  .container-cust p {
+    font-size: 12px;
+    background: #ff7e20;
+  }
+} */
+
+@media (prientation: landspace) {
+  .container-cust{
+    background: #813b3b;
+  }
+  .container-cust p {
+    font-size: 12px;
+    background: #ff7e20;
+    color: #253f97;
+  }
+}
+
+
+.box-cust {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* @media (max-width: 1000px) {
+  можно записать все классы в один МЕДИА,
+  классы МЕДИА всегда пишуться внизу!
+  или под классом который внитри МЕДИА 
+} */
+
+.item-cust {
+  height: 150px;
+  background:#253f97;
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media (max-width: 1000px){
+  /**  RULE: max-w = 0 ~ 1000px  **/
+  .box-cust {
+    /**  RULE: max-w = 0 ~ 1000px  **/
+    gap: 20px;
+    background: #1eff00;
+  }
+
+  .item-cust {
+    background: #33aa90;
+    flex-basis: 45%;
+    color: #f2f2f2;
+  }
+}
+
+@media (max-width: 600px) {
+  .item-cust {
+    flex-basis: 100%;
+    background: #2f313a;
+    color: #ff0000;
+    font-size: 18px;
+  }
+}
+
+
+
+/********* ADAPTIVE ****************/
+
+/*** @media 640px ***/
+
+
+/*** @media 768px ***/
+
+
+/*** @media 1024px ***/
+
+
+/*** @media 1280px ***/
+
+
+
+
+
 
